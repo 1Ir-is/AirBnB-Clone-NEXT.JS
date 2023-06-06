@@ -95,30 +95,23 @@ const LoginModal = () => {
                 outline
                 label='Continue with Google'
                 icon={FcGoogle}
-                onClick={() => {}}
+                onClick={() => signIn('google')}
                 
             />
             <Button 
                 outline
                 label='Continue with Github'
                 icon={AiFillGithub}
-                onClick={() => {}}
+                onClick={() => signIn('github')}
 
             />
-            <Button 
+            {/* <Button 
                 outline
                 label='Continue with Facebook'
                 icon={GrFacebook}
-                onClick={() => {}}
+                onClick={() => signIn('facebook')}
 
-            />
-            <Button 
-                outline
-                label='Continue with Apple'
-                icon={AiFillApple}
-                onClick={() => {}}
-
-            />
+            /> */}
             <div
                 className='
                     text-neutral-500
