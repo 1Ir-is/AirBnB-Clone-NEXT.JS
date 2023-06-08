@@ -44,7 +44,7 @@ export const categories = [
         description: 'This property has a pool!'
     },
     {
-        label: 'Island',
+        label: 'Islands',
         icon: GiIsland,
         description: 'This property is on an island!'
     },
