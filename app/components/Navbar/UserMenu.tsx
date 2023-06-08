@@ -10,6 +10,7 @@ import { signOut } from 'next-auth/react';
 import { SafeUser } from '@/app/types';
 import useRentModal from '@/app/hooks/useRentModal';
 import { useRouter } from 'next/navigation';
+import { TbWorld } from 'react-icons/tb';
 
 interface UserMenuProps {
     currentUser?: SafeUser | null;
@@ -56,6 +57,22 @@ const UserMenu: React.FC<UserMenuProps> = ({
                     "
                 >
                     AirBnB your home
+                </div>
+                <div
+                    className="
+                       hidden
+                       md:block
+                       text-sm
+                       font-semibold
+                       py-3
+                       px-4
+                       rounded-full
+                       hover:bg-neutral-100
+                       transition
+                       cursor-pointer 
+                    "
+                >
+                    <TbWorld size={21} />
                 </div>
                 <div
                     onClick={toggleOpen}

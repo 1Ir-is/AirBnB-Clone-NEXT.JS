@@ -12,10 +12,13 @@ import {
     GiCastle, 
     GiCaveEntrance, 
     GiForestCamp, 
+    GiGrandPiano, 
     GiIsland, 
-    GiWindmill 
+    GiTreehouse, 
+    GiWindmill, 
+    GiWoodCabin
 } from "react-icons/gi"
-import { MdOutlineVilla } from "react-icons/md"
+import { MdOutlineVilla, MdVilla } from "react-icons/md"
 import CategoryBox from "../CategoryBox";
 import { usePathname, useSearchParams } from "next/navigation";
 
@@ -26,19 +29,14 @@ export const categories = [
         description: 'This property is close to the beach!'
     },
     {
-        label: 'Windmill',
+        label: 'Cabins',
+        icon: GiWoodCabin,
+        description: 'This property is a cabin!'
+    },
+    {
+        label: 'Windmills',
         icon: GiWindmill,
         description: 'This property has windmill!'
-    },
-    {
-        label: 'Modern',
-        icon: MdOutlineVilla,
-        description: 'This property has windmill!'
-    },
-    {
-        label: 'Countryside',
-        icon: TbMountain,
-        description: 'This property is in the countryside!'
     },
     {
         label: 'Pool',
@@ -51,11 +49,6 @@ export const categories = [
         description: 'This property is on an island!'
     },
     {
-        label: 'Lake',
-        icon: GiBoatFishing,
-        description: 'This property is close to a lake!'
-    },
-    {
         label: 'Skiing',
         icon: FaSkiing,
         description: 'This property has skiing activities!'
@@ -64,6 +57,21 @@ export const categories = [
         label: 'Castles',
         icon: GiCastle,
         description: 'This property is in a castle!'
+    },
+    {
+        label: 'Countryside',
+        icon: TbMountain,
+        description: 'This property is in the countryside!'
+    },
+    {
+        label: 'Treehouses',
+        icon: GiTreehouse,
+        description: 'This property is an tree house!'
+    },
+    {
+        label: 'Lake',
+        icon: GiBoatFishing,
+        description: 'This property is close to a lake!'
     },
     {
         label: 'Camping',
@@ -83,15 +91,20 @@ export const categories = [
     {
         label: 'Desert',
         icon: GiCactus,
-        description: 'This property is is in a desert!'
+        description: 'This property is in a desert!'
     },
     {
-        label: 'Barns',
-        icon: GiBarn,
-        description: 'This property is is in a barn!'
+        label: 'Grand pianos',
+        icon: GiGrandPiano,
+        description: 'This property have a grand piano!'
     },
     {
-        label: 'Lux',
+        label: 'Modern',
+        icon: MdVilla,
+        description: 'This property is a mordern place!'
+    },
+    {
+        label: 'Luxe',
         icon: IoDiamond,
         description: 'This property is is luxurious!'
     },
